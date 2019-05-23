@@ -1,0 +1,65 @@
+div.progress-steps {
+  width: 100%;
+  margin: 2em auto;
+  counter-reset: step;
+}
+
+div.progress-steps a {
+  display: inline-block;
+  width: 25%;
+  float: left;
+  font-size: 1.1em;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.progress-steps a:before {
+  width: 2.5em;
+  height: 2.5em;
+  content: counter(step);
+  counter-increment: step;
+  line-height: 2.5em;
+  border: 4px solid #b8aca1;
+  display: block;
+  text-align: center;
+  margin: 0 auto .7em auto;
+  border-radius: 50%;
+  background-color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.progress-steps a:after {
+  width: 100%;
+  height: 4px;
+  content: '';
+  position: absolute;
+  background-color: #d6d0c9;
+  top: 34%;
+  left: -50%;
+  z-index: -1;
+}
+
+.progress-steps a:first-child:after {
+  content: none;
+}
+
+.progress-steps a.active {
+  color: #000;
+}
+
+.progress-steps a.active:before {
+  border-color: #EA5560;
+}
+
+.progress-steps a.active + a:after {
+  background-color: #d6d0c9;
+}
+
+.hide {
+  /*display:none;*/
+}
