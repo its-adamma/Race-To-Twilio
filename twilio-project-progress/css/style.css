@@ -1,5 +1,26 @@
-//#E74C68
-//#EA5560
+
+.content {
+  width: 100%;
+  position: top;
+  z-index: 1;
+  margin: 0;
+  font-size: 20px;
+  font-family: "Helvetica";
+  color: #EA5560;
+}
+
+.multiply {
+  width: 100%;
+  position: top;
+  z-index: 1;
+  margin: 0;
+  font-size: 20px;
+  font-family: "Helvetica";
+  color: #000;
+}
+
+
+
 
 $brand-color: #EA5560; //twilio color
 $brand-grey: #FAACB5;
@@ -8,7 +29,7 @@ $body-color: #FFF;
 
 div.progress-steps {
     width:100%;
-    margin: 2em auto;
+    margin: 1em auto;
     counter-reset: step;
   }
   div.progress-steps a {
